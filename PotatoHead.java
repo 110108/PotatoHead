@@ -66,20 +66,18 @@ public class PotatoHead
 		{
 			eyeNum -= num;
 		}
-
 		else
 		{
 			System.out.println("Sorry, but this Potatohead has no eyes to take away!");
 		}
 	}
-
-
 	
 	//mutator method to put on or take off glasses
 	public void setHasGlasses(boolean wantGlasses)
 	{
 		hasGlasses = wantGlasses;
 	}
+	
 	// String toString()
 	// method to access ***ALL*** instance variables
 	// you should be adding your new instance variable here
@@ -88,7 +86,7 @@ public class PotatoHead
 	{
 		String output;
 		output =  "Glasses: " + glasses;
-    output += "\nNumber of eyes: "+ eyeNum;
+		output += "\nNumber of eyes: "+ eyeNum;
 		output =  "\nEyes: " + hasEyes;
 		output += "\nMustache: " + hasMustache;
 		output += "\nCostume: " + hasCostume;
