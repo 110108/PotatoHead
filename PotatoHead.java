@@ -21,7 +21,7 @@ public class PotatoHead
 	*/
 
 	// String getEyeColor()
-	// accessor method for mustache
+	// accessor method for eye color
 	public String getEyeColor()
 	{
 		return eyes;
