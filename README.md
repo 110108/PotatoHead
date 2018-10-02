@@ -1,8 +1,11 @@
 # PotatoHead
 
 How to contribute:
-
+- [Fork](https://help.github.com/articles/github-glossary/#fork) this repository
+- Open your forked copy in Github Desktop by clicking the big, green [Clone](https://help.github.com/articles/github-glossary/#clone) button, then Open In Desktop
 - Add one instance variable
-- Initialize ***ALL*** instance variables
+- Initialize your instance variable
 - Add one or more methods related to your attribute
 - Add your instance variable to the toString() method
+- [Commit](https://help.github.com/articles/github-glossary/#commit) and [Push](https://help.github.com/articles/github-glossary/#push) your changes
+- Create a [Pull Request](https://help.github.com/articles/github-glossary/#pull-request)
