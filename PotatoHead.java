@@ -8,6 +8,7 @@ public class PotatoHead
 	private String eyeColor;
 	private boolean hasMustache;
 	private boolean hasCostume;
+	private boolean hasPhone;
 	// add one instance variable
 
 	// default constructor
@@ -20,6 +21,7 @@ public class PotatoHead
 		eyeColor = "unknown";
 		hasMustache = false;
 		hasCostume = true;
+		hasPhone = true;
 	}
 
 	/*
@@ -36,7 +38,7 @@ public class PotatoHead
 	// accessor method for eye color
 	public String getEyeColor()
 	{
-		return eyes;
+		return eyeColor;
 	}
 	
 	//accessor method for glasses
@@ -64,20 +66,18 @@ public class PotatoHead
 		{
 			eyeNum -= num;
 		}
-
 		else
 		{
 			System.out.println("Sorry, but this Potatohead has no eyes to take away!");
 		}
 	}
-
-
 	
 	//mutator method to put on or take off glasses
 	public void setHasGlasses(boolean wantGlasses)
 	{
 		hasGlasses = wantGlasses;
 	}
+	
 	// String toString()
 	// method to access ***ALL*** instance variables
 	// you should be adding your new instance variable here
@@ -85,15 +85,12 @@ public class PotatoHead
 	public String toString()
 	{
 		String output;
-
-
-
 		output =  "Glasses: " + glasses;
-    output += "\nNumber of eyes: "+ eyeNum;
+		output += "\nNumber of eyes: "+ eyeNum;
 		output =  "\nEyes: " + hasEyes;
 		output += "\nMustache: " + hasMustache;
 		output += "\nCostume: " + hasCostume;
-
+		output += "\nPhone:   " + hasPhone;
 
 		return output;
 	}
