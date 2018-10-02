@@ -1,9 +1,6 @@
 // hacktoberfest 2018
-import java.util.Scanner;
-
 public class PotatoHead
 {
-	Scanner scan = new Scanner(System.in);
 	// create instance variables
 	private boolean hasEyes;
 	private String eyeColor;
@@ -46,15 +43,11 @@ public class PotatoHead
 	// MUTATOR METHOD - change an instance variable's value
 	public void setEyeColor(String someColor)
 	{
-		System.out.print("What eye color do you want: ");
-		someColor = scan.nextLine();
 		eyeColor = someColor;
 	}
 
 	public void setCostume()
 	{
-		System.out.print("What costume do you want: ");
-		someCostume = scan.nextLine();
 		costume = someCostume;
 	}
 	// String toString()
