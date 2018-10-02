@@ -5,6 +5,7 @@ public class PotatoHead
 	private boolean hasEyes;
 	private String eyeColor;
 	private boolean hasMustache;
+	private String eyes;
 	// add one instance variable
 
 	// default constructor
