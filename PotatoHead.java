@@ -58,7 +58,7 @@ public class PotatoHead
 		String output;
 
 
-		output =  "Glasses: " + glasses;
+		output =  "Glasses: " + hasGlasses;
 		output =  "\nEyes: " + hasEyes;
 		output += "\nMustache: " + hasMustache;
 		output += "\nCostume: " + hasCostume;
