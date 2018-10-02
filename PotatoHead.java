@@ -85,9 +85,6 @@ public class PotatoHead
 	public String toString()
 	{
 		String output;
-
-
-
 		output =  "Glasses: " + glasses;
     output += "\nNumber of eyes: "+ eyeNum;
 		output =  "\nEyes: " + hasEyes;
