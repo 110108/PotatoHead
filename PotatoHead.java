@@ -3,6 +3,7 @@ public class PotatoHead
 {
 	// create instance variables
 	private boolean hasEyes;
+	private int numberOfEyes;
 	private String eyeColor;
 	private boolean hasMustache;
 	// add one instance variable
@@ -12,6 +13,7 @@ public class PotatoHead
 	{
 		// initialize ***ALL*** instance variables
 		hasEyes = false;
+		numberOfEyes = 0;
 		eyeColor = "unknown";
 		hasMustache = false;
 	}
@@ -22,6 +24,11 @@ public class PotatoHead
 
 	// String getEyeColor()
 	// accessor method for mustache
+	public int getNumOfEyes()
+	{
+		return eyeNum;
+	}
+
 	public String getEyeColor()
 	{
 		return eyes;
@@ -34,6 +41,24 @@ public class PotatoHead
 		eyeColor = someColor;
 	}
 
+	public void addEye(int num)
+	{
+		eyeNum += num;
+	}
+
+	public void takeEye(int num)
+	{
+		if(eyeNum>=1)
+		{
+			eyeNum -= num;
+		}
+
+		else
+		{
+			System.out.println("Sorry, but this Potatohead has no eyes to take away!");
+		}
+	}
+
 	// String toString()
 	// method to access ***ALL*** instance variables
 	// you should be adding your new instance variable here
@@ -42,6 +67,7 @@ public class PotatoHead
 	{
 		String output;
 		output =  "Eyes: " + eyes;
+		output += "\nNumber of eyes: "+ eyeNum;
 		output += "\nMustache: " + mustache;
 		output += "\nCostume: " + costume;
 		return output;
