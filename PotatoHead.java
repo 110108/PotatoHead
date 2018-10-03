@@ -63,7 +63,10 @@ public class PotatoHead
 		return eyeColor;
 	}
 	
-	//accessor method for glasses
+	/**
+	accessor method for glasses
+	@return hasGlasses boolean for whether or not the potato head has glasses
+	**/
 	public boolean haveGlasses()
 	{
 		return hasGlasses;
@@ -98,7 +101,10 @@ public class PotatoHead
 		}
 	}
 	
-	//mutator method to put on or take off glasses
+	/**
+	mutator method to put on or take off glasses
+	@param wantGlasses boolean to add glasses or take them off
+	**/
 	public void setHasGlasses(boolean wantGlasses)
 	{
 		hasGlasses = wantGlasses;
