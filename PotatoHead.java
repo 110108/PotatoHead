@@ -5,6 +5,7 @@ public class PotatoHead
 	private boolean hasEyes;
 	private String eyeColor;
 	private boolean hasMustache;
+	private boolean hashair
 	// add one instance variable
 
 	// default constructor
@@ -12,8 +13,9 @@ public class PotatoHead
 	{
 		// initialize ***ALL*** instance variables
 		hasEyes = false;
-		eyeColor = "unknown";
+		eyeColor = "false";
 		hasMustache = false;
+		hashair = true;
 	}
 
 	/*
@@ -44,6 +46,7 @@ public class PotatoHead
 		output =  "Eyes: " + eyes;
 		output += "\nMustache: " + mustache;
 		output += "\nCostume: " + costume;
+		output += "\nhair: " + hair;
 		return output;
 	}
 }
