@@ -46,7 +46,7 @@ public class PotatoHead
 		eyeColor = someColor;
 	}
 
-	public void setCostume()
+	public void setCostume(someCostume)
 	{
 		costume = someCostume;
 	}
