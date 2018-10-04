@@ -11,9 +11,15 @@ public class PotatoHead
 	private boolean hasMustache;
 	private boolean hasCostume;
 	private boolean hasPhone;
-	// add one instance variable
+	private boolean hasShoes;
+	private String costume;
+	private String someCostume;
+	private String someColor;
+  // add one instance variable
 
-	// default constructor
+
+	/** default constructor
+  */
 	public PotatoHead()
 	{
 		// initialize ***ALL*** instance variables
@@ -24,6 +30,8 @@ public class PotatoHead
 		eyeNum = 0;
 		eyeColor = "unknown";
 		hasMustache = false;
+		hasShoes = false;
+		costume = "unknown";
 		hasCostume = true;
 		hasPhone = false;
 	}
@@ -50,11 +58,24 @@ public class PotatoHead
 	{
 		return haveArms;
 	}
+	// String getEyeColor()
+	// accessor method for eye color
+	public String getEyeColor()
+	{
+		return eyeColor;
+	}
+
+	// accessor method for hasShoes
+	public boolean getHasShoes()
+	{
+		return hasShoes;
+
 
 	// accessor method for number of eyes
 	public int getNumOfEyes()
 	{
 		return eyeNum;
+
 	}
 
 	// accessor method for eye color
@@ -64,6 +85,11 @@ public class PotatoHead
 	}
 
 	//accessor method for glasses
+	
+	/**
+	accessor method for glasses
+	@return hasGlasses boolean for whether or not the potato head has glasses
+	**/
 	public boolean haveGlasses()
 	{
 		return hasGlasses;
@@ -76,6 +102,10 @@ public class PotatoHead
 		eyeColor = someColor;
 	}
 
+	public void setCostume()
+	{
+		costume = someCostume;
+	}
 
 
 	public void takeEye(int num)
@@ -91,6 +121,11 @@ public class PotatoHead
 	}
 
 	//mutator method to put on or take off glasses
+	
+	/**
+	mutator method to put on or take off glasses
+	@param wantGlasses boolean to add glasses or take them off
+	**/
 	public void setHasGlasses(boolean wantGlasses)
 	{
 		hasGlasses = wantGlasses;
@@ -106,12 +141,24 @@ public class PotatoHead
 		output =  "Glasses: " + hasGlasses;
 		output += "\nArms: " + haveArms;
 		output += "\nNumber of arms: " + armNum;
-		output += "\nNumber of eyes: "+ eyeNum;
-		output =  "\nEyes: " + hasEyes;
+	/** String toString()
+	method to access ***ALL*** instance variables
+	you should be adding your new instance variable here
+	ACCESSOR METHOD
+  @return a string that describes the object state with all instance variables
+  */
+	public String toString()
+	{
+		String output;
+    output =  "Eyes: " + hasEyes;
+		output =  "\nEyes: " + eyeColor;
 		output += "\nMustache: " + hasMustache;
-		output += "\nCostume: " + hasCostume;
+		output += "\nShoes: " + hasShoes;
+    output += "\nCostume: " + hasCostume;
+		output += "\nCostume: " + costume;
+		output =  "Glasses: " + glasses;
+		output += "\nNumber of eyes: "+ eyeNum;
 		output += "\nPhone:   " + hasPhone;
-
 		return output;
 	}
 }
