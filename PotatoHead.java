@@ -62,13 +62,13 @@ public class PotatoHead
 	{
 		return eyeColor;
 	}
-	
+
 	//accessor method for glasses
 	public boolean haveGlasses()
 	{
 		return hasGlasses;
 	}
-	
+
 	// void setEyeColor(String someColor)
 	// MUTATOR METHOD - change an instance variable's value
 	public void setEyeColor(String someColor)
@@ -76,7 +76,12 @@ public class PotatoHead
 		eyeColor = someColor;
 	}
 
-	public void setCostume(someCostume)
+
+	/**
+		Mutator method to change the potatohead's costume
+		@param someCostume String that gets set to the potatohead's costume
+	*/
+	public void setCostume(String someCostume)
 	{
 		costume = someCostume;
 	}
@@ -97,7 +102,7 @@ public class PotatoHead
 			System.out.println("Sorry, but this Potatohead has no eyes to take away!");
 		}
 	}
-	
+
 	//mutator method to put on or take off glasses
 	public void setHasGlasses(boolean wantGlasses)
 	{
