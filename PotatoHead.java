@@ -5,7 +5,7 @@ public class PotatoHead
 	private boolean hasEyes;
 	private String eyeColor;
 	private boolean hasMustache;
-	private boolean hashair
+	private boolean hasHair;
 	// add one instance variable
 
 	// default constructor
@@ -24,6 +24,7 @@ public class PotatoHead
 
 	// String getEyeColor()
 	// accessor method for mustache
+	public void setHairColor
 	public String getEyeColor()
 	{
 		return eyes;
@@ -34,6 +35,7 @@ public class PotatoHead
 	public void setEyeColor(String someColor)
 	{
 		eyeColor = someColor;
+
 	}
 
 	// String toString()
