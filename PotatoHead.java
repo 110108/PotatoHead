@@ -71,7 +71,7 @@ public class PotatoHead
 	{
 		return hasGlasses;
 	}
-	
+
 	// void setEyeColor(String someColor)
 	// MUTATOR METHOD - change an instance variable's value
 	public void setEyeColor(String someColor)
@@ -79,7 +79,12 @@ public class PotatoHead
 		eyeColor = someColor;
 	}
 
-	public void setCostume()
+
+	/**
+		Mutator method to change the potatohead's costume
+		@param someCostume String that gets set to the potatohead's costume
+	*/
+	public void setCostume(String someCostume)
 	{
 		costume = someCostume;
 	}
