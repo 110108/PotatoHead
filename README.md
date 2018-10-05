@@ -9,3 +9,13 @@ How to contribute:
 - Add your instance variable to the toString() method
 - [Commit](https://help.github.com/articles/github-glossary/#commit) and [Push](https://help.github.com/articles/github-glossary/#push) your changes
 - Create a [Pull Request](https://help.github.com/articles/github-glossary/#pull-request)
+
+
+## PotatoHead API
+### Constructor Summary
+
+### Method Summary
+Return Type | Method and Args                 | Description
+------------|---------------------------------|------------
+void        | setEyeColor(String someColor) | Sets the eye color of this PotatoHead to the given String argument
+String      | toString()  | Method to return a String listing all instance variables
