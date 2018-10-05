@@ -7,13 +7,15 @@ public class PotatoHead
 	private int numberOfEyes;
 	private String eyeColor;
 	private boolean hasMustache;
-	private boolean hasCostume;
+	private boolean hasHair;
 	private boolean hasPhone;
 	private boolean hasShoes;
+  private boolean hasCostume;
 	private String costume;
 	private String someCostume;
 	private String someColor;
   // add one instance variable
+
 
 
 	/** default constructor
@@ -23,6 +25,9 @@ public class PotatoHead
 		// initialize ***ALL*** instance variables
 		hasGlasses = false;
 		hasEyes = false;
+		eyeColor = "false";
+		hasMustache = false;
+		hashair = true;
 		numberOfEyes = 0;
 		eyeColor = "unknown";
 		hasMustache = false;
@@ -77,6 +82,7 @@ public class PotatoHead
 	public void setEyeColor(String someColor)
 	{
 		eyeColor = someColor;
+
 	}
 
 
@@ -130,9 +136,11 @@ public class PotatoHead
 		output += "\nShoes: " + hasShoes;
     output += "\nCostume: " + hasCostume;
 		output += "\nCostume: " + costume;
+		output += "\nhair: " + hair;
 		output =  "Glasses: " + glasses;
 		output += "\nNumber of eyes: "+ eyeNum;
 		output += "\nPhone:   " + hasPhone;
+
 		return output;
 	}
 }
