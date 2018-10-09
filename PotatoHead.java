@@ -28,6 +28,7 @@ public class PotatoHead
 		eyeColor = "false";
 		hasMustache = false;
 		hashair = true;
+		hasnose = true;
 		numberOfEyes = 0;
 		eyeColor = "unknown";
 		hasMustache = false;
@@ -67,7 +68,7 @@ public class PotatoHead
 	{
 		return eyeColor;
 	}
-	
+
 	/**
 	accessor method for glasses
 	@return hasGlasses boolean for whether or not the potato head has glasses
@@ -111,7 +112,7 @@ public class PotatoHead
 			System.out.println("Sorry, but this Potatohead has no eyes to take away!");
 		}
 	}
-	
+
 	/**
 	mutator method to put on or take off glasses
 	@param wantGlasses boolean to add glasses or take them off
@@ -119,6 +120,15 @@ public class PotatoHead
 	public void setHasGlasses(boolean wantGlasses)
 	{
 		hasGlasses = wantGlasses;
+	}
+
+	/**
+		mutator method to have or not have nose
+		@param wantnose boolean to add nose or take it off
+	**/
+	public void setHasnose(boolean wantnose)
+		{
+			hasnose = wantnose;
 	}
 
 	/** String toString()
@@ -138,6 +148,7 @@ public class PotatoHead
 		output += "\nCostume: " + costume;
 		output += "\nhair: " + hair;
 		output =  "Glasses: " + glasses;
+		output = "Nose: " + nose;
 		output += "\nNumber of eyes: "+ eyeNum;
 		output += "\nPhone:   " + hasPhone;
 
