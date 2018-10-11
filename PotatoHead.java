@@ -10,10 +10,12 @@ public class PotatoHead
 	private boolean hasHair;
 	private boolean hasPhone;
 	private boolean hasShoes;
-  private boolean hasCostume;
+	private boolean hasArms;
+  	private boolean hasCostume;
 	private String costume;
 	private String someCostume;
 	private String someColor;
+
   // add one instance variable
 
 
@@ -36,6 +38,7 @@ public class PotatoHead
 		costume = "unknown";
 		hasCostume = true;
 		hasPhone = true;
+		hasArms = true;
 	}
 
 	/*
@@ -76,6 +79,12 @@ public class PotatoHead
 	public boolean haveGlasses()
 	{
 		return hasGlasses;
+	}
+
+	// accessor method for having arms
+	public boolean getHasArms()
+	{
+		return hasArms
 	}
 
 	// void setEyeColor(String someColor)
@@ -151,6 +160,7 @@ public class PotatoHead
 		output = "Nose: " + nose;
 		output += "\nNumber of eyes: "+ eyeNum;
 		output += "\nPhone:   " + hasPhone;
+		output += "\nArms: " + hasArms;
 
 		return output;
 	}
