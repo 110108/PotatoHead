@@ -7,9 +7,10 @@ public class PotatoHead
 	private int numberOfEyes;
 	private String eyeColor;
 	private boolean hasMustache;
-	private boolean hasCostume;
+	private boolean hasHair;
 	private boolean hasPhone;
 	private boolean hasShoes;
+  private boolean hasCostume;
 	private String costume;
 	private String someCostume;
 	private String someColor;
@@ -17,7 +18,6 @@ public class PotatoHead
 	private boolean hasshirt;
   // add one instance variable
 
-                                                     //add number of heads in code
 	/** default constructor
   */
 	public PotatoHead()
@@ -25,6 +25,10 @@ public class PotatoHead
 		// initialize ***ALL*** instance variables
 		hasGlasses = false;
 		hasEyes = false;
+		eyeColor = "false";
+		hasMustache = false;
+		hashair = true;
+		hasnose = true;
 		numberOfEyes = 0;
 		eyeColor = "unknown";
 		hasMustache = false;
@@ -85,13 +89,19 @@ public class PotatoHead
 	public void setEyeColor(String someColor)
 	{
 		eyeColor = someColor;
+
 	}
 	public void setshirtcolor(String someColor)
 	{
 		shirtcolor = someColor;
 	}
 
-	public void setCostume()
+
+	/**
+		Mutator method to change the potatohead's costume
+		@param someCostume String that gets set to the potatohead's costume
+	*/
+	public void setCostume(String someCostume)
 	{
 		costume = someCostume;
 	}
@@ -122,6 +132,15 @@ public class PotatoHead
 		hasGlasses = wantGlasses;
 	}
 
+	/**
+		mutator method to have or not have nose
+		@param wantnose boolean to add nose or take it off
+	**/
+	public void setHasnose(boolean wantnose)
+		{
+			hasnose = wantnose;
+	}
+
 	/** String toString()
 	method to access ***ALL*** instance variables
 	you should be adding your new instance variable here
@@ -137,7 +156,9 @@ public class PotatoHead
 		output += "\nShoes: " + hasShoes;
     output += "\nCostume: " + hasCostume;
 		output += "\nCostume: " + costume;
+		output += "\nhair: " + hair;
 		output =  "Glasses: " + glasses;
+		output = "Nose: " + nose;
 		output += "\nNumber of eyes: "+ eyeNum;
 		output += "\nPhone:   " + hasPhone;
 		output += "\nShirt:   " +hasshirt;
