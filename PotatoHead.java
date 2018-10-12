@@ -107,7 +107,7 @@ public class PotatoHead
 		output += "\nArms: " + haveArms;
 		output += "\nNumber of arms: " + armNum;
 		output += "\nNumber of eyes: "+ eyeNum;
-		output =  "\nEyes: " + hasEyes;
+		output +=  "\nEyes: " + hasEyes;
 		output += "\nMustache: " + hasMustache;
 		output += "\nCostume: " + hasCostume;
 		output += "\nPhone:   " + hasPhone;
