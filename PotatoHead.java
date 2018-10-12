@@ -9,14 +9,18 @@ public class PotatoHead
 	private int eyeNum;
 	private String eyeColor;
 	private boolean hasMustache;
-	private boolean hasCostume;
+	private boolean hasHair;
 	private boolean hasPhone;
 	private boolean hasShoes;
+	private boolean hasArms;
+  	private boolean hasCostume;
 	private String costume;
 	private String someCostume;
 	private String someColor;
-  // add one instance variable
+	private String shirtcolor;
+	private boolean hasshirt;
 
+  // add one instance variable
 
 	/** default constructor
   */
@@ -28,12 +32,20 @@ public class PotatoHead
 		hasEyes = false;
 		armNum = 0;
 		eyeNum = 0;
+		eyeColor = "false";
+		hasMustache = false;
+		hashair = true;
+		hasnose = true;
+		numberOfEyes = 0;
 		eyeColor = "unknown";
 		hasMustache = false;
 		hasShoes = false;
 		costume = "unknown";
 		hasCostume = true;
-		hasPhone = false;
+		hasPhone = true;
+		hasArms = true;
+		hasshirt = true;
+		shirtcolor = 0;
 	}
 
 	/*
@@ -64,6 +76,10 @@ public class PotatoHead
 	{
 		return eyeColor;
 	}
+	public String getshirtcolor()
+	{
+		return shirtcolor;
+	}
 
 	// accessor method for hasShoes
 	public boolean getHasShoes()
@@ -78,7 +94,12 @@ public class PotatoHead
 
 	}
 
-	//accessor method for glasses
+
+	// accessor method for eye color
+	public String getEyeColor()
+	{
+		return eyeColor;
+	}
 
 	/**
 	accessor method for glasses
@@ -89,14 +110,30 @@ public class PotatoHead
 		return hasGlasses;
 	}
 
+	// accessor method for having arms
+	public boolean getHasArms()
+	{
+		return hasArms
+	}
+
 	// void setEyeColor(String someColor)
 	// MUTATOR METHOD - change an instance variable's value
 	public void setEyeColor(String someColor)
 	{
 		eyeColor = someColor;
+
+	}
+	public void setshirtcolor(String someColor)
+	{
+		shirtcolor = someColor;
 	}
 
-	public void setCostume()
+
+	/**
+		Mutator method to change the potatohead's costume
+		@param someCostume String that gets set to the potatohead's costume
+	*/
+	public void setCostume(String someCostume)
 	{
 		costume = someCostume;
 	}
@@ -114,7 +151,6 @@ public class PotatoHead
 		}
 	}
 
-	//mutator method to put on or take off glasses
 
 	/**
 	mutator method to put on or take off glasses
@@ -123,6 +159,15 @@ public class PotatoHead
 	public void setHasGlasses(boolean wantGlasses)
 	{
 		hasGlasses = wantGlasses;
+	}
+
+	/**
+		mutator method to have or not have nose
+		@param wantnose boolean to add nose or take it off
+	**/
+	public void setHasnose(boolean wantnose)
+		{
+			hasnose = wantnose;
 	}
 
 	/** String toString()
@@ -135,14 +180,22 @@ public class PotatoHead
 	{
 		String output;
     output =  "Eyes: " + hasEyes;
-		output =  "\nEyes: " + eyeColor;
+		output +=  "\nEye Color: " + eyeColor;
 		output += "\nMustache: " + hasMustache;
 		output += "\nShoes: " + hasShoes;
-    	output += "\nCostume: " + hasCostume;
+    output += "\nCostume: " + hasCostume;
 		output += "\nCostume: " + costume;
-		output +=  "Glasses: " + hasGlasses;
+		output += "\nGlasses: " + hasGlasses;
 		output += "\nNumber of eyes: "+ eyeNum;
 		output += "\nPhone:   " + hasPhone+"\n\n";
+		output += "\nhair: " + hair;
+		output += "\nGlasses: " + glasses;
+		output += "\nNose: " + nose;
+		output += "\nNumber of eyes: "+ eyeNum;
+		output += "\nPhone:   " + hasPhone;
+		output += "\nArms: " + hasArms;
+		output += "\nShirt:   " +hasshirt;
+		output += "\nshirtcolor:   " +shirtcolor;
 		return output;
 	}
 }
