@@ -8,7 +8,7 @@ public class tester
 		Scanner sc = new Scanner(System.in);
 		PotatoHead jim = new PotatoHead();
 
-		System.out.print(jim.toString()+"\n");
+		System.out.print(jim.toString());
 	}
 }
 

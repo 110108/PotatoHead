@@ -69,7 +69,7 @@ public class PotatoHead
 	public boolean getHasShoes()
 	{
 		return hasShoes;
-
+	}
 
 	// accessor method for number of eyes
 	public int getNumOfEyes()
@@ -78,14 +78,8 @@ public class PotatoHead
 
 	}
 
-	// accessor method for eye color
-	public String getEyeColor()
-	{
-		return eyeColor;
-	}
-
 	//accessor method for glasses
-	
+
 	/**
 	accessor method for glasses
 	@return hasGlasses boolean for whether or not the potato head has glasses
@@ -121,7 +115,7 @@ public class PotatoHead
 	}
 
 	//mutator method to put on or take off glasses
-	
+
 	/**
 	mutator method to put on or take off glasses
 	@param wantGlasses boolean to add glasses or take them off
@@ -131,19 +125,6 @@ public class PotatoHead
 		hasGlasses = wantGlasses;
 	}
 
-	// String toString()
-	// method to access ***ALL*** instance variables
-	// you should be adding your new instance variable here
-	// ACCESSOR METHOD
-	public String toString()
-	{
-		String output;
-		output =  "Glasses: " + hasGlasses;
-		output += "\nArms: " + haveArms;
-		output += "\nNumber of arms: " + armNum;
-		output += "\nNumber of eyes: "+ eyeNum;
-		output +=  "\nEyes: " + hasEyes;
-=======
 	/** String toString()
 	method to access ***ALL*** instance variables
 	you should be adding your new instance variable here
@@ -155,14 +136,13 @@ public class PotatoHead
 		String output;
     output =  "Eyes: " + hasEyes;
 		output =  "\nEyes: " + eyeColor;
->>>>>>> f4f3bc47f4124db7ee81241311aae38bc813bd33
 		output += "\nMustache: " + hasMustache;
 		output += "\nShoes: " + hasShoes;
-    output += "\nCostume: " + hasCostume;
+    	output += "\nCostume: " + hasCostume;
 		output += "\nCostume: " + costume;
-		output =  "Glasses: " + glasses;
+		output +=  "Glasses: " + hasGlasses;
 		output += "\nNumber of eyes: "+ eyeNum;
-		output += "\nPhone:   " + hasPhone;
+		output += "\nPhone:   " + hasPhone+"\n\n";
 		return output;
 	}
 }
