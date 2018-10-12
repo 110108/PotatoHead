@@ -14,6 +14,7 @@ public class PotatoHead
 	private String costume;
 	private String someCostume;
 	private String someColor;
+	private boolean hasTattoo;
   // add one instance variable
 
 
@@ -36,6 +37,7 @@ public class PotatoHead
 		costume = "unknown";
 		hasCostume = true;
 		hasPhone = true;
+		hasTattoo = true;
 	}
 
 	/*
@@ -130,6 +132,12 @@ public class PotatoHead
 		{
 			hasnose = wantnose;
 	}
+	// accessor method for tattoo
+	public boolean hasTattoo()
+	{
+		return hasTattoo;
+	}
+
 
 	/** String toString()
 	method to access ***ALL*** instance variables
@@ -154,4 +162,5 @@ public class PotatoHead
 
 		return output;
 	}
+
 }
