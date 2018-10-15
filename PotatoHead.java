@@ -13,10 +13,11 @@ public class PotatoHead
 	private boolean hasPhone;
 	private boolean hasShoes;
 	private boolean hasArms;
-  	private boolean hasCostume;
+  private boolean hasCostume;
 	private String costume;
 	private String someCostume;
 	private String someColor;
+	private boolean hasTattoo;
 	private String shirtcolor;
 	private boolean hasshirt;
 
@@ -169,6 +170,10 @@ public class PotatoHead
 		{
 			hasnose = wantnose;
 	}
+	public void sethasTattoo(boolean wantTattoo)
+	{
+		hasTattoo = wantTattoo;
+	}
 
 	/** String toString()
 	method to access ***ALL*** instance variables
@@ -193,6 +198,7 @@ public class PotatoHead
 		output += "\nNose: " + nose;
 		output += "\nNumber of eyes: "+ eyeNum;
 		output += "\nPhone:   " + hasPhone;
+		output += "\nTattoo: " +hasTattoo;
 		output += "\nArms: " + hasArms;
 		output += "\nShirt:   " +hasshirt;
 		output += "\nshirtcolor:   " +shirtcolor;
