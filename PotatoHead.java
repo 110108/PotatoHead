@@ -37,7 +37,6 @@ public class PotatoHead
 		costume = "unknown";
 		hasCostume = true;
 		hasPhone = true;
-		hasTattoo = true;
 	}
 
 	/*
@@ -132,12 +131,10 @@ public class PotatoHead
 		{
 			hasnose = wantnose;
 	}
-	// accessor method for tattoo
-	public boolean hasTattoo()
+	public void sethasTattoo(boolean wantTattoo)
 	{
-		return hasTattoo;
+		hasTattoo = wantTattoo;
 	}
-
 
 	/** String toString()
 	method to access ***ALL*** instance variables
@@ -159,8 +156,8 @@ public class PotatoHead
 		output = "Nose: " + nose;
 		output += "\nNumber of eyes: "+ eyeNum;
 		output += "\nPhone:   " + hasPhone;
+		output += "\nTattoo: " +hasTattoo;
 
 		return output;
 	}
-
 }
