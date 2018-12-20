@@ -2,50 +2,56 @@
 public class PotatoHead
 {
 	// create instance variables
+	//boleans
 	private boolean hasGlasses;
 	private boolean haveArms;
 	private boolean hasEyes;
-	private int armNum;
-	private int eyeNum;
-	private String eyeColor;
 	private boolean hasMustache;
 	private boolean hasHair;
+	private boolean hasNose;
 	private boolean hasPhone;
 	private boolean hasShoes;
 	private boolean hasArms;
   	private boolean hasCostume;
+  	private boolean hasShirt;
+
+  	//ints
+  	private int armNum;
+	private int eyeNum;
+
+	//strings
 	private String costume;
-	private String someCostume;
-	private String someColor;
-	private String shirtcolor;
-	private boolean hasshirt;
+	private String shirtColor;
+	private String eyeColor;
+	private String hairColor;
 
   // add one instance variable
 
-	/** default constructor
-  */
+	// default constructor
 	public PotatoHead()
 	{
 		// initialize ***ALL*** instance variables
 		hasGlasses = false;
 		haveArms = false;
 		hasEyes = false;
+		hasMustache = false;
+		hasHair = true;
+		hasNose = true;
+		hasPhone = true;
+		hasShoes = false;
+		hasArms = true;
+		hasCostume = true;
+		hasShirt = true;
+
+		//ints
 		armNum = 0;
 		eyeNum = 0;
-		eyeColor = "false";
-		hasMustache = false;
-		hashair = true;
-		hasnose = true;
-		numberOfEyes = 0;
-		eyeColor = "unknown";
-		hasMustache = false;
-		hasShoes = false;
+
+		//strings
 		costume = "unknown";
-		hasCostume = true;
-		hasPhone = true;
-		hasArms = true;
-		hasshirt = true;
-		shirtcolor = 0;
+		shirtColor = "unknown";
+		eyeColor = "unknown";
+		hairColor = "unknown";
 	}
 
 	/*
@@ -76,9 +82,9 @@ public class PotatoHead
 	{
 		return eyeColor;
 	}
-	public String getshirtcolor()
+	public String getShirtColor()
 	{
-		return shirtcolor;
+		return shirtColor;
 	}
 
 	// accessor method for hasShoes
@@ -94,13 +100,6 @@ public class PotatoHead
 
 	}
 
-
-	// accessor method for eye color
-	public String getEyeColor()
-	{
-		return eyeColor;
-	}
-
 	/**
 	accessor method for glasses
 	@return hasGlasses boolean for whether or not the potato head has glasses
@@ -113,7 +112,7 @@ public class PotatoHead
 	// accessor method for having arms
 	public boolean getHasArms()
 	{
-		return hasArms
+		return hasArms;
 	}
 
 	// void setEyeColor(String someColor)
@@ -125,7 +124,7 @@ public class PotatoHead
 	}
 	public void setshirtcolor(String someColor)
 	{
-		shirtcolor = someColor;
+		shirtColor = someColor;
 	}
 
 
@@ -167,7 +166,7 @@ public class PotatoHead
 	**/
 	public void setHasnose(boolean wantnose)
 		{
-			hasnose = wantnose;
+			hasNose = wantnose;
 	}
 
 	/** String toString()
@@ -188,14 +187,15 @@ public class PotatoHead
 		output += "\nGlasses: " + hasGlasses;
 		output += "\nNumber of eyes: "+ eyeNum;
 		output += "\nPhone:   " + hasPhone+"\n\n";
-		output += "\nhair: " + hair;
-		output += "\nGlasses: " + glasses;
-		output += "\nNose: " + nose;
+		output += "\nHair: " + hasHair;
+		output += "\nHair color: " + hairColor;
+		output += "\nGlasses: " + hasGlasses;
+		output += "\nNose: " + hasNose;
 		output += "\nNumber of eyes: "+ eyeNum;
 		output += "\nPhone:   " + hasPhone;
 		output += "\nArms: " + hasArms;
-		output += "\nShirt:   " +hasshirt;
-		output += "\nshirtcolor:   " +shirtcolor;
+		output += "\nShirt:   " +hasShirt;
+		output += "\nshirtcolor:   " +shirtColor;
 		return output;
 	}
 }
