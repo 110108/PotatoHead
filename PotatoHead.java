@@ -12,11 +12,12 @@ public class PotatoHead
 	private boolean hasPhone;
 	private boolean hasShoes;
 	private boolean hasArms;
-  private boolean hasCostume;
-  private boolean hasShirt;
+  	private boolean hasCostume;
+  	private boolean hasShirt;
+  	private boolean hasTattoo;
 
-  //ints
-  private int armNum;
+  	//ints
+  	private int armNum;
 	private int eyeNum;
 
 	//strings
@@ -26,7 +27,7 @@ public class PotatoHead
 	private String hairColor;
 
 
-  // add one instance variable
+  	// add one instance variable
 
 	// default constructor
 	public PotatoHead()
@@ -43,6 +44,7 @@ public class PotatoHead
 		hasArms = true;
 		hasCostume = true;
 		hasShirt = true;
+		hasTattoo = false;
 
 		//ints
 		armNum = 0;
@@ -183,15 +185,15 @@ public class PotatoHead
 	public String toString()
 	{
 		String output;
-    output =  "Eyes: " + hasEyes;
+    	output =  "Eyes: " + hasEyes;
 		output +=  "\nEye Color: " + eyeColor;
 		output += "\nMustache: " + hasMustache;
 		output += "\nShoes: " + hasShoes;
-    output += "\nCostume: " + hasCostume;
+    	output += "\nCostume: " + hasCostume;
 		output += "\nCostume: " + costume;
 		output += "\nGlasses: " + hasGlasses;
 		output += "\nNumber of eyes: "+ eyeNum;
-		output += "\nPhone:   " + hasPhone+"\n\n";
+		output += "\nPhone:   " + hasPhone;
 		output += "\nHair: " + hasHair;
 		output += "\nHair color: " + hairColor;
 		output += "\nGlasses: " + hasGlasses;
@@ -201,7 +203,7 @@ public class PotatoHead
 		output += "\nTattoo: " +hasTattoo;
 		output += "\nArms: " + hasArms;
 		output += "\nShirt:   " +hasShirt;
-		output += "\nshirtcolor:   " +shirtColor;
+		output += "\nshirtcolor:   " +shirtColor+"\n";
 		return output;
 	}
 }
